@@ -1,0 +1,16 @@
+{
+  "name": "javascript-jungle-teachers-edition",
+  "version": "0.0.0",
+  "description": "The source materials for the JavaScript Jungle Teachers Edition",
+  "scripts": {
+    "lab:solution:dot-click": "open 1-hello-world/lab/finished/dot-click.html",
+    "lab:dot-click": "open 1-hello-world/lab/start/dot-click.html",
+    "sample:arrays": "open 2-data-structures/samples/arrays.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoonHighway/javascript-jungle-teachers-edition.git"
+  },
+  "author": "Moon Highway",
+  "license": "UNLICENSED"
+}
