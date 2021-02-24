@@ -1,30 +1,53 @@
-const createClockTime = (date) => new Date();
+const outfit = [
+  { name: "Cool Hat", price: 20 },
+  { name: "Cool Tee Shirt", price: 25 },
+  {
+    category: "Accessories",
+    inventory: [
+      {
+        name: "Cool Sunglasses",
+        price: 150,
+      },
+      {
+        name: "Cool Watch",
+        price: 400,
+      },
+      {
+        category: "Jewelry",
+        inventory: [
+          {
+            name: "Cool Earrings",
+            price: 25,
+          },
+          {
+            name: "Cool bracelet",
+            price: 40,
+          },
+          {
+            name: "Cool Necklace",
+            price: 80,
+          },
+        ],
+      },
+      {
+        name: "shorts",
+        price: 42,
+      },
+      {
+        name: "flip flops",
+        price: 22,
+      },
+    ],
+  },
+];
 
-const appendAMPM = (date) => ({
-  date,
-  ampm: date.getHours() >= 12 ? "PM" : "AM",
-});
+function outfitCost(outfit) {
+  return outfit.reduce((total, item) => {
+    if (item.inventory) {
+      return outfitCost(item.inventory) + total;
+    }
+    return total + item.price;
+  }, 0);
+}
 
-const civilianHours = (clockTime) => {
-  const hours = clockTime.date.getHours();
-  return {
-    ampm: clockTime.ampm,
-    hours: hours > 12 ? hours - 12 : hours,
-  };
-};
-
-const toString = ({ hours, ampm }) => `${hours} ${ampm}`;
-
-const compose = (...fns) => (arg) =>
-  fns.reduce((composed, f) => f(composed), arg);
-
-// Using a compose function
-
-const displayHours = compose(
-  createClockTime,
-  appendAMPM,
-  civilianHours,
-  toString
-);
-
-console.log(displayHours());
+console.log(outfitCost(outfit));
