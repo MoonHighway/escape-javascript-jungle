@@ -8,22 +8,6 @@ try {
   var fetch = require("node-fetch");
 }
 
-const parseJSON = (res) => res.json();
-const pluckResults = (data) => data.results;
-const usaOnly = (data) =>
-  data.filter(({ location }) => location.country === "United States");
-const trimUserData = (data) =>
-  data.map((user) => ({
-    name: user.name,
-    email: user.email,
-    location: `${user.location.city}, ${user.location.state}, ${user.location.country}`,
-  }));
-const toString = (data) => JSON.stringify(data, null, 2);
-
-//
-// Thenables are a form of composition
-//
-
 fetch("https://randomuser.me/api/?results=100")
   .then(parseJSON)
   .then(pluckResults)
@@ -31,3 +15,27 @@ fetch("https://randomuser.me/api/?results=100")
   .then(trimUserData)
   .then(toString)
   .then(console.log);
+
+function parseJSON(res) {
+  return res.json();
+}
+
+function pluckResults({ results }) {
+  return results;
+}
+
+function usaOnly(data) {
+  return data.filter(({ location }) => location.country === "United States");
+}
+
+function trimUserData(data) {
+  return data.map((user) => ({
+    name: user.name,
+    email: user.email,
+    location: `${user.location.city}, ${user.location.state}, ${user.location.country}`,
+  }));
+}
+
+function toString(data) {
+  return JSON.stringify(data, null, 2);
+}
