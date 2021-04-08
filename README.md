@@ -20,13 +20,14 @@ This repo contains everything you'll need to participate in the class.
 
 The course is broken down into 4 parts: three sections and a longer lab activity.
 
-- Add links to course sections
+- [Object-Oriented JavaScript](https://github.com/MoonHighway/escape-javascript-jungle/tree/main/01-object-oriented)
+- [Functional JavaScript](https://github.com/MoonHighway/escape-javascript-jungle/tree/main/02-functional-javascript)
+- [JavaScript Modules](https://github.com/MoonHighway/escapejavascript-jungle/tree/main/03-javascript-modules)
+- [Lab Activity](https://github.com/MoonHighway/escape-javascript-jungle/tree/main/04-lab-code-challenges)
 
 ## Course Times ⏱
 
 You can expect the course to follow this schedule:
-
-- [ ] Add Course Times
 
 | Time        | Activity | Length |
 | ----------- | ---------------------------| ------ |
