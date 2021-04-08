@@ -23,7 +23,7 @@ The course is broken down into 4 parts: three sections and a longer lab activity
 - [Object-Oriented JavaScript](https://github.com/MoonHighway/escape-javascript-jungle/tree/main/01-object-oriented-js)
 - [Functional JavaScript](https://github.com/MoonHighway/escape-javascript-jungle/tree/main/02-functional-js)
 - [JavaScript Modules](https://github.com/MoonHighway/escapejavascript-jungle/tree/main/03-js-modules)
-- [Lab Activity](https://github.com/MoonHighway/escape-javascript-jungle/tree/main/04-lab-code-challenges)
+- [Lab Activity](https://github.com/MoonHighway/escape-javascript-jungle/tree/main/04-lab-code-challenge)
 
 ## Course Times ⏱
 
