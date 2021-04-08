@@ -1,10 +1,12 @@
 # Escape From the JavaScript Jungle
 
-- Add image
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png" width="100" alt="javascript logo"/>
+</p>
 
 ## Student Resources 📚
 
-- Add course welcome message
+Thanks for being here! We're so glad you're joining us today.
 
 ## Using these Files 🗂
 
@@ -27,11 +29,11 @@ You can expect the course to follow this schedule:
 - [ ] Add Course Times
 
 | Time        | Activity | Length |
-| ----------- | -------- | ------ |
-| 9:00-10:00  |          | 1hr    |
-| 10:00-10:15 |          | 15min  |
-| 10:15-11:15 |          | 1hr    |
-| 11:15-11:30 |          | 15min  |
-| 11:30-12:30 |          | 1hr    |
-| 12:30-1:00  |          | 30min  |
-| 1:00        |          |        |
+| ----------- | ---------------------------| ------ |
+| 9:00-10:00  | Object Oriented JavaScript | 1hr    |
+| 10:00-10:15 | Break        | 15min  |
+| 10:15-11:15 | Functional JavaScript         | 1hr    |
+| 11:15-11:30 | Break        | 15min  |
+| 11:30-12:30 | JavaScript Modules         | 1hr    |
+| 12:30-1:00  | Code Challenges Lab         | 30min  |
+| 1:00        | End         |        |
